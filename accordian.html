@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordian example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+     #flip, #accordian{
+        border: 2px solid green;
+        background-color: aqua;
+        text-align: center;
+     }
+     #accordian{
+        padding: 50px;
+        display: none;
+        
+     }
+    </style>
+    <script>
+        $*('document').ready(function(){
+            //alert('check');
+            $('flip').click(function(){
+                //alert('flip clicked');
+                $('accordian').slideToggle();
+            });
+        });
+
+
+    </script>
+
+</head>
+<body>
+<div id="flip">click to show the content</div>
+<div id="accordian">have a nice day</div>
+</body>
+</html>

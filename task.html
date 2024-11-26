@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+</head>
+<body>
+    <div class="image_container">
+        <img id="hover_image" class="image" src="download.jpg" alt="image 1">
+    </div>
+
+    <script>
+
+        const imgElement=document.getElementById('hover_image');
+        imgElement.addEventListener('mouseover', function(){
+            imgElement.src='download.jpg';
+        });
+        imgElement.addEventListener('mouseout', function(){
+            imgElement.src='arrow.png';
+        });
+        
+
+
+    </script>
+
+     
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, ipsum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, minus! Dolor id minima </p>
+
+</body>
+</html>
