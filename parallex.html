@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunted Place</title>
+    <style>
+       body, html {
+        height: 100%;
+        margin: 0;
+        color: #777;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .bgimg-1, .bgimg-2 {
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh; /* Full viewport height */
+    }
+    
+    /* Ensure these image paths are correct relative to your CSS file */
+    .bgimg-1 {
+        background-image: url("images/horrer.jpeg"); /* Path to your first image */
+    }
+    
+    .bgimg-2 {
+        background-image: url("images/download.jpg"); /* Path to your second image */
+    }
+    
+    /* Add a fallback color in case the images do not load */
+    .bgimg-1, .bgimg-2 {
+        background-color: #333; /* Dark background color as fallback */
+    }
+    
+    .bgimg-1::before, .bgimg-2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        z-index: 1;
+    }
+    
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #fff; /* White text for better contrast */
+        z-index: 2; /* Ensure the caption is above the overlay */
+    }
+    
+    .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+    
+    h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #111;
+    }
+    
+    /* Responsive Design for smaller devices */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2 {
+            background-attachment: scroll; /* Disable fixed background on smaller screens */
+        }
+    }
+</style>
+ 
+</head>
+<body>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Haunted Place</span>
+        </div>
+    </div>
+    <div style="color:#777; background-color: wheat; text-align: center; padding: 50px 80px; text-align: justify;">
+        <h3>Lahoot La Makan</h3>
+        <p>
+            Tuhfat al-Kiram — primarily, a chronicle of Sufis in Sindh by Mir Ali Sher Qaune Thattvi (c. mid-eighteenth century) — that one Bilawal Shah Noorani of Thatta was afflicted by divine frenzy, and had to leave the town in the late fifteenth century during the reign of Jam Nizamuddin II. He ventured west of Thatta and ended up in the valley, usurping the orchards of one Gokal Seth.
+        </p>
+    </div>
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border">Haunted Place</span>
+        </div>
+    </div>
+    <div style="position:relative;">
+        <div style="color:#ddd; background-color:#282E34; text-align: center; padding:50px 80px; text-align: justify;">
+            <p>
+                The site draws thousands of Shia Muslim pilgrims every year, who take a fortnight-long pilgrimage to the valley, starting from the shrine of Lal Shahbaz Qalandar Sehwan and stopping by at small shrines (or stations) in the way. However, the primary subject of veneration is not Shah Noorani but Ali, a cousin of Muhammad and the first Shia Imam. A footprint is alleged to be that of Ali, cast while he had dismounted from his horse to fight "Gokul Deo"; another footprint is attributed to the hoof of his horse. There is also a cave, where Shah Noorani had allegedly spent his last days; inside lies a stone which is argued to be the image of Ali's came
+            </p>
+        </div>
+    </div>
+</body>
+</html>
